@@ -43,8 +43,8 @@ def process_detections(frame, detections, conf_threshold=0.5):
 
 # Function to load the DNN model.
 def load_model():
-    modelFile = r"C:\Users\hiwhy\OneDrive\Desktop\OpenCV For Beginners\Module 7 - Building & Deploy Web Apps w streamlit\Download Code\module07-streamlit\res10_300x300_ssd_iter_140000_fp16.caffemodel"
-    configFile = r"C:\Users\hiwhy\OneDrive\Desktop\OpenCV For Beginners\Module 7 - Building & Deploy Web Apps w streamlit\Download Code\module07-streamlit\deploy.prototxt"
+    modelFile = r"res10_300x300_ssd_iter_140000_fp16.caffemodel"
+    configFile = r"deploy.prototxt"
     net = cv2.dnn.readNetFromCaffe(configFile, modelFile)
     return net
 
